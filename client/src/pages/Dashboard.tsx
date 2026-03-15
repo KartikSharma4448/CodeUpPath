@@ -46,9 +46,9 @@ export default function Dashboard() {
                 <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">Name</p>
                 <p className="mt-3 text-white">{user?.fullName || "—"}</p>
               </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <div className="min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">Email</p>
-                <p className="mt-3 text-white">{user?.email || "—"}</p>
+                <p className="mt-3 truncate text-white" title={user?.email}>{user?.email || "—"}</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">Login via</p>

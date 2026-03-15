@@ -84,8 +84,8 @@ export function PageShell({
               </div>
               <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
                 {metrics.map((metric) => (
-                  <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-                    <p className="text-2xl font-display font-bold text-white sm:text-3xl">{metric.value}</p>
+                  <div key={metric.label} className="min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+                    <p className="truncate text-xl font-display font-bold text-white sm:text-2xl" title={metric.value}>{metric.value}</p>
                     <p className="mt-2 text-xs uppercase tracking-[0.25em] text-cyan-400 sm:text-sm">{metric.label}</p>
                   </div>
                 ))}
